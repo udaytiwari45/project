@@ -1,0 +1,441 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Neue Haas Grotesk Text Pro ";
+    box-sizing: border-box;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+#main{
+    width: 100%;
+}
+
+#home{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+#home #circle{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    width: 70vw;
+    height: 70vw;
+    border-radius: 50%;
+    /* background-color: white; */
+}
+
+#circle img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+
+#home img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#top{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+#top img{
+    transform: translate(-50%, -50%) rotate(-180deg);
+}
+
+#btm {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+#btm img:nth-child(1){
+    transform: translate(-50%, -50%) scale(2);
+}
+
+#btm img:nth-child(2){
+    transform: translate(-50%, -50%) scale(1.5);
+}
+#btm img:nth-child(3){
+    transform: translate(-50%, -50%) scale(1);
+}
+
+
+
+
+#top img:nth-child(1){
+    transform: translate(-50%, -50%) rotate(-180deg) scale(2);
+}
+
+#top img:nth-child(2){
+    transform: translate(-50%, -50%) rotate(-180deg) scale(1.5);
+}
+#top img:nth-child(3){
+    transform: translate(-50%, -50%) rotate(-180deg) scale(1);
+}
+
+
+
+#overlay{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+#overlay>h1#gallery{
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    color: rgba(0, 0, 0, 0.771);
+    z-index: 9999;
+    font-size: 10vw;
+    font-weight: 400;
+}
+
+#smcircle{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 45vw;
+    height: 45vw;
+    border-radius: 50%;
+    background-color: white;
+}
+
+
+#main #nav, #second #nav{
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 99999;
+  text-transform: uppercase;
+  padding: 30px 50px;
+}
+
+h1{
+    font-size: 1.1vw;
+    padding-bottom: 2px;
+}
+
+#rt{
+    width: 90px;
+    height: 40px;
+}
+
+#rtb{
+    width: 100%;
+    height: 40%;
+    display: flex;
+}
+
+#a{
+    width: 15px;
+    background-color:  rgb(212.5, 212.5, 212.5);
+}
+#b{
+    width: 15px;
+    background-color:  rgb(170,170,170);
+}
+#c{
+    width: 15px;
+    background-color:  rgb(127.5, 127.5, 127.5);
+}
+#d{
+    width: 15px;
+    background-color:  rgb(85, 85, 85);
+}
+#e{
+    width: 15px;
+    background-color: rgb(42.5, 42.5, 42.5);
+}
+#f{
+    width: 15px;
+    background-color: black;
+}
+
+#rtt{
+    display: flex;
+    font-size: 12px;
+    justify-content: space-between;
+    padding: 8px 0;
+    opacity: 0.8;
+}
+
+
+#main #btmnav, #second #btmnav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    z-index: 99999;
+    bottom: 0;
+    padding: 30px 50px;
+}
+
+#btmnav img{
+    width: 100px;
+}
+
+
+
+#centerimg{
+    width: 30vw;
+    position: absolute;
+    z-index: 9999;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+#centerimg h5{
+    text-transform: uppercase;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+#centerimg #cimage{
+    position: relative;
+    width: 100%;
+    height: 260px;
+    overflow: hidden;
+}
+
+#cimage img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+#gola{
+    position: absolute;
+    z-index: 999999999;
+    top: 150%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    width: 5vw;
+    height: 5vw;
+    background-color: #d5a7b4;
+}
+
+#overlay>h1#pf{
+    position: absolute;
+    width: 75%;
+    line-height: 1;
+    bottom: -50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(20deg);
+    transform-origin: 0% 50%;
+    color: #d5a7b4;
+    z-index: 9999;
+    font-size: 10vw;
+    font-weight: 400;
+}
+
+#pinkpart{
+    position: absolute;
+    top: 120%;
+    left: 0%;
+    width: 32vw;
+    height: 32vw;
+    background-color: #d5a7b4;
+    z-index: 99;
+}
+
+#pcenter{
+    position: absolute;
+    top: 40%;
+    left: 10%;
+    color: white;
+    font-size: 12px;
+    width: 70%;
+}
+
+#pcdown{
+    position: absolute;
+    margin: 0px 20px;
+}
+#pcdown h4{
+    margin-top: 10px;
+}
+
+#pbtm{
+    position: absolute;
+    display: flex;
+    top: 15vw;
+}
+
+
+
+
+
+
+
+
+#second{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+#stop{
+    position: relative;
+    width: 100%;
+    height: 65%;
+    overflow: hidden;
+    border-bottom: 2px solid #dadada;
+}
+
+#sbtm{
+    position: relative;
+    width: 100%;
+    height: 35%;
+}
+
+.circle{
+    position: absolute;
+    top: 150%;
+    transform: translate(-50%, -50%);
+    width: 14vw;
+    height: 14vw;
+    border-radius: 50%;
+}
+
+#stop .pu{
+    left: 45%;
+    background-color: #b8acd4;
+}
+
+#stop .pi{
+    left: 55%;
+    background: linear-gradient(to right, #d5a7b4, #d5a7b4);
+
+}
+
+#sbtm p{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3vw;
+    font-family: "Neue Haas Grotesk Text Pro";
+    text-transform: uppercase;
+    font-weight: 500;
+    text-align: center;
+    line-height: 1;
+}
+
+#sbtm p:nth-child(1){
+    opacity: 0;
+}
+
+#stop h1{
+    position: absolute;
+    left: 100%;
+    bottom: 0;
+    font-size: 20vw;
+    color: white;
+    font-weight: 100;
+    z-index: 9999;
+}
+
+
+/* Responsive part */
+
+@media(max-width: 500px){
+    #home #nav, #second #nav{
+        padding: 15px;
+    }
+
+    #home #btmnav, #second #btmnav{
+        padding: 5px 15px;
+    }
+
+    #nav h1{
+        font-size: 4vw;
+    }
+
+    #centerimg{
+        width: 80vw;
+    }
+
+    #centerimg #cimage{
+        height: 180px;
+    }
+
+    #centerimg h5{
+        margin-bottom: 5px;
+    }
+
+    #pinkpart{
+        width: 80vw;
+        height: 60vw;
+    }
+
+    
+    #overlay>h1#gallery{
+      margin-bottom: 12vw; 
+      font-weight: 900;
+      font-size: 14vw;
+    }
+
+    #overlay>h1#pf{
+        font-size: 12vw;
+        font-weight: 900;
+    }
+
+    #gola{
+        width: 25vw;
+        height: 25vw;
+    }
+
+    #smcircle{
+        width: 95vw;
+        height: 95vw;
+    }
+
+    #home #circle{
+        width: 150vw;
+        height: 150vw;
+    }
+
+    #sbtm p{
+        font-size: 5vw;
+        width: 90%;
+    }
+
+    .circle{
+        width: 34vw;
+        height: 34vw;
+    }
+
+    #stop h1{
+        font-size: 55vw;
+    }
+
+}
